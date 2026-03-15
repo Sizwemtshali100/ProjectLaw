@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+    {% block content %}
+
+        <h1>The Login Page</h1>
+        <a href="{% url 'LoginForm' %}">Login Page</a> || <a href="{% url 'RegistrationForm' %}">Register</a>        <br>
+        <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" name="username" placeholder="Username"><br><br>
+                </div>
+                <div class="col">
+                    <input type="password" name="password" class="form-control" placeholder="Password" ><br><br>
+                </div>
+            </div>
+            <br>
+            <input type="submit" value="Enter" class="btn btn-primary">
+        </form>
+    
+    
+    {% endblock %}

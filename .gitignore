@@ -1,0 +1,8 @@
+#Virtual environment
+myenv
+#google cloud service account
+djangodeploymentone-9ffcfc87b9ab.json
+#Django
+db.sqlite3
+#Environment variable
+.env

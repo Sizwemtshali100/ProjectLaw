@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+    {% block content %}
+        <br>
+        <br>
+        <h1>Hi, Nosipho... Sorry it's been a while</h1>
+        <hr>
+        <a href="{% url 'home' %}">Home</a> || <a href="{% url 'forms' %}">The Form</a>
+        <br>
+        <br>
+        {% for data in myData %}
+            {{data}}<br>
+        {% endfor %}
+    
+    {% endblock %}
